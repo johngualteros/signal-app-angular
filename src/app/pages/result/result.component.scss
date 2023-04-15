@@ -1,0 +1,40 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-size: 4rem;
+        font-weight: 700;
+        background: rgb(248,98,98);
+        background: linear-gradient(138deg, rgba(248,98,98,1) 0%, rgba(237,136,92,1) 50%, rgba(255,204,119,1) 100%);
+        text-align: center;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 30px;
+    }
+    h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+    button {
+        background: rgb(248,98,98);
+        background: linear-gradient(138deg, rgba(248,98,98,1) 0%, rgba(237,136,92,1) 50%, rgba(255,204,119,1) 100%);
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        color: #000;
+        font-size: 1.2rem;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+            background: rgb(248,98,98);
+            background: linear-gradient(138deg, rgba(255,204,119,1) 0%, rgba(237,136,92,1) 50%, rgba(248,98,98,1) 100%);
+        }
+    }
+}

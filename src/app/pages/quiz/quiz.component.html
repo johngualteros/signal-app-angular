@@ -1,0 +1,13 @@
+<div class="container">
+    <h2> {{ actualQuestion() }} / {{ length() }}</h2>
+
+    <!-- description of response -->
+    <div class="alert" #alert>{{ question().description }}</div>
+
+    <h1>{{question().name}}</h1>
+    <div class="responses">
+        <div *ngFor="let answer of question().answers">
+            <button (click)="selectResponse(answer.id)">{{answer.content}}</button>
+        </div>
+    </div>
+</div>
